@@ -1,0 +1,152 @@
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-psz26[0m
+{"level":"warn","ts":1567332721.6356268,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567332721.6361408,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-zvgzc[0m
+{"level":"warn","ts":1567332722.5394702,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1567332722.5409565,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-danielma911-environment-li-tprtj[0m
+{"level":"warn","ts":1567332728.5897756,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567332729.171718,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/***********/environment-lighterspectrum-staging.git @ bd75399c8103301ed1ea5220e4b198e48e8d0ede in path /workspace/source"}
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:bd75399c8103301ed1ea5220e4b198e48e8d0ede
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+selected pack: /builder/home/.**/draft/packs/github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/packs/environment
+Effective pipeline written to jenkins-x-promotion-effective.yml
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+running command: ** step next-version --use-git-tag-only --tag
+created new version: 0.0.3 and written to file: ./VERSION
+Tag v0.0.3 created and pushed to remote origin
+
+PipelineActivity for ***********-environment-lighterspectrum-staging-master-3
+Applying changes 
+upserted PipelineResource ***********-environment-lighter for the git repository https://github.com/***********/environment-lighterspectrum-staging.git
+upserted Task ***********-environment-lighter-txcw4-from-build-pack-3
+upserted Pipeline ***********-environment-lighter-txcw4-3
+created PipelineRun ***********-environment-lighter-txcw4-3
+created PipelineStructure ***********-environment-lighter-txcw4-3
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-jkkf2[0m
+{"level":"warn","ts":1567332744.102138,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567332744.1025846,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-working-dir-initializer-6qtm8[0m to start...
+
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-6qtm8[0m
+{"level":"warn","ts":1567332745.2121167,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1567332745.2137372,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/env\""}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-place-tools[0m to start...
+
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-source-danielma911-environment-lighter-kmwh2[0m to start...
+
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-danielma911-environment-lighter-kmwh2[0m
+{"level":"warn","ts":1567332750.3068612,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567332750.8849788,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/***********/environment-lighterspectrum-staging.git @ v0.0.3 in path /workspace/source"}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-merge[0m to start...
+
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:bd75399c8103301ed1ea5220e4b198e48e8d0ede
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-setup-jx-git-credentials[0m to start...
+
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /builder/home/git/credentials
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-helm-apply[0m to start...
+
+
+Showing logs for build [32mmeta-danielma911-environment-li-wxbnq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-apply[0m
+Modified file /workspace/source/env/Chart.yaml to set the chart to version 3
+Copying the helm source directory /workspace/source/env to a temporary location for building and applying /tmp/**-helm-apply-766770319/env
+Applying helm chart at /tmp/**-helm-apply-766770319/env as release name ** to namespace **-staging
+verifying the helm requirements versions in dir: . using version stream URL:  and git ref: 
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Ignoring templates/.gitignore
+Wrote chart values.yaml /tmp/**-helm-apply-766770319/env/values.yaml generated from directory tree
+generated helm /tmp/**-helm-apply-766770319/env/values.yaml
+
+PipelineSecrets:
+  DockerConfig: '{"auths":{"foenebula.azurecr.io":{"auth":"Zm9lbmVidWxhOitQRHV1Nmx4Zndzc0ZRYm9sclF1dzA1VGE5QURJQ3hv"}}}'
+cleanup:
+  Annotations:
+    helm.sh/hook: pre-delete
+    helm.sh/hook-delete-policy: hook-succeeded
+  Args:
+  - --cleanup
+controllerbuild:
+  enabled: true
+controllerworkflow:
+  enabled: false
+dockerRegistry: foenebula.azurecr.io
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  Args:
+  - --v
+  - 4
+  config:
+    domain: 40.118.244.106.nip.io
+    exposer: Ingress
+    http: "true"
+jenkins:
+  Servers:
+    Global:
+      EnvVars:
+        TILLER_NAMESPACE: kube-system
+  enabled: false
+prow: {}
+
+Using values files: /tmp/**-helm-apply-766770319/env/values.yaml
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+Applying Apps chart overrides
+Applying chart overrides
+error: upgrading helm chart '.': failed to run 'kubectl apply --recursive -f /tmp/helm-template-workdir-878334500/**/output/namespaces/**-staging -l jenkins.io/chart-release=** --namespace **-staging --wait --validate=false' command in directory '/tmp/**-helm-apply-766770319/env', output: 'role.rbac.authorization.k8s.io/cleanup configured
+rolebinding.rbac.authorization.k8s.io/cleanup configured
+serviceaccount/cleanup configured
+configmap/exposecontroller configured
+role.rbac.authorization.k8s.io/expose configured
+rolebinding.rbac.authorization.k8s.io/expose configured
+serviceaccount/expose configured
+release.jenkins.io/sunday-daniel-0.0.3 created
+service/sunday-daniel configured
+Error from server: error when applying patch:
+{"metadata":{"annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"extensions/v1beta1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{\"jenkins.io/chart\":\"env\"},\"labels\":{\"chart\":\"sunday-daniel-0.0.3\",\"draft\":\"draft-app\",\"jenkins.io/chart-release\":\"**\",\"jenkins.io/namespace\":\"**-staging\",\"jenkins.io/version\":\"3\"},\"name\":\"**-sunday-daniel\",\"namespace\":\"**-staging\"},\"spec\":{\"replicas\":1,\"template\":{\"metadata\":{\"labels\":{\"app\":\"**-sunday-daniel\",\"draft\":\"draft-app\"}},\"spec\":{\"containers\":[{\"env\":null,\"image\":\"foenebula.azurecr.io/***********/sunday-daniel:0.0.3\",\"imagePullPolicy\":\"IfNotPresent\",\"livenessProbe\":{\"httpGet\":{\"path\":\"/\",\"port\":8080},\"initialDelaySeconds\":60,\"periodSeconds\":10,\"successThreshold\":1,\"timeoutSeconds\":1},\"name\":\"sunday-daniel\",\"ports\":[{\"containerPort\":8080}],\"readinessProbe\":{\"httpGet\":{\"path\":\"/\",\"port\":8080},\"periodSeconds\":10,\"successThreshold\":1,\"timeoutSeconds\":1},\"resources\":{\"limits\":{\"cpu\":\"100m\",\"memory\":\"256Mi\"},\"requests\":{\"cpu\":\"80m\",\"memory\":\"128Mi\"}}}],\"terminationGracePeriodSeconds\":{\"imagePullSecrets\":[{\"name\":\"acr-auth\"}]}}}}}\n"},"labels":{"chart":"sunday-daniel-0.0.3","jenkins.io/version":"3"}},"spec":{"template":{"spec":{"$setElementOrder/containers":[{"name":"sunday-daniel"}],"containers":[{"env":null,"image":"foenebula.azurecr.io/***********/sunday-daniel:0.0.3","name":"sunday-daniel"}],"terminationGracePeriodSeconds":{"imagePullSecrets":[{"name":"acr-auth"}]}}}}}
+to:
+Resource: "extensions/v1beta1, Resource=deployments", GroupVersionKind: "extensions/v1beta1, Kind=Deployment"
+Name: "**-sunday-daniel", Namespace: "**-staging"
+Object: &{map["apiVersion":"extensions/v1beta1" "kind":"Deployment" "metadata":map["annotations":map["deployment.kubernetes.io/revision":"2" "jenkins.io/chart":"env" "kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"extensions/v1beta1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{\"jenkins.io/chart\":\"env\"},\"labels\":{\"chart\":\"sunday-daniel-0.0.2\",\"draft\":\"draft-app\",\"jenkins.io/chart-release\":\"**\",\"jenkins.io/namespace\":\"**-staging\",\"jenkins.io/version\":\"2\"},\"name\":\"**-sunday-daniel\",\"namespace\":\"**-staging\"},\"spec\":{\"replicas\":1,\"template\":{\"metadata\":{\"labels\":{\"app\":\"**-sunday-daniel\",\"draft\":\"draft-app\"}},\"spec\":{\"containers\":[{\"env\":null,\"image\":\"foenebula.azurecr.io/***********/sunday-daniel:0.0.2\",\"imagePullPolicy\":\"IfNotPresent\",\"livenessProbe\":{\"httpGet\":{\"path\":\"/\",\"port\":8080},\"initialDelaySeconds\":60,\"periodSeconds\":10,\"successThreshold\":1,\"timeoutSeconds\":1},\"name\":\"sunday-daniel\",\"ports\":[{\"containerPort\":8080}],\"readinessProbe\":{\"httpGet\":{\"path\":\"/\",\"port\":8080},\"periodSeconds\":10,\"successThreshold\":1,\"timeoutSeconds\":1},\"resources\":{\"limits\":{\"cpu\":\"100m\",\"memory\":\"256Mi\"},\"requests\":{\"cpu\":\"80m\",\"memory\":\"128Mi\"}}}],\"terminationGracePeriodSeconds\":null}}}}\n"] "creationTimestamp":"2019-09-01T08:41:53Z" "generation":'\x02' "labels":map["chart":"sunday-daniel-0.0.2" "draft":"draft-app" "jenkins.io/chart-release":"**" "jenkins.io/namespace":"**-staging" "jenkins.io/version":"2"] "name":"**-sunday-daniel" "namespace":"**-staging" "resourceVersion":"21253" "selfLink":"/apis/extensions/v1beta1/namespaces/**-staging/deployments/**-sunday-daniel" "uid":"5917d6ef-cc94-11e9-96f9-a2fca553445f"] "spec":map["progressDeadlineSeconds":%!q(int64=+2147483647) "replicas":'\x01' "revisionHistoryLimit":%!q(int64=+2147483647) "selector":map["matchLabels":map["app":"**-sunday-daniel" "draft":"draft-app"]] "strategy":map["rollingUpdate":map["maxSurge":'\x01' "maxUnavailable":'\x01'] "type":"RollingUpdate"] "template":map["metadata":map["creationTimestamp":<nil> "labels":map["app":"**-sunday-daniel" "draft":"draft-app"]] "spec":map["containers":[map["image":"foenebula.azurecr.io/***********/sunday-daniel:0.0.2" "imagePullPolicy":"IfNotPresent" "livenessProbe":map["failureThreshold":'\x03' "httpGet":map["path":"/" "port":'\u1f90' "scheme":"HTTP"] "initialDelaySeconds":'<' "periodSeconds":'\n' "successThreshold":'\x01' "timeoutSeconds":'\x01'] "name":"sunday-daniel" "ports":[map["containerPort":'\u1f90' "protocol":"TCP"]] "readinessProbe":map["failureThreshold":'\x03' "httpGet":map["path":"/" "port":'\u1f90' "scheme":"HTTP"] "periodSeconds":'\n' "successThreshold":'\x01' "timeoutSeconds":'\x01'] "resources":map["limits":map["cpu":"100m" "memory":"256Mi"] "requests":map["cpu":"80m" "memory":"128Mi"]] "terminationMessagePath":"/dev/termination-log" "terminationMessagePolicy":"File"]] "dnsPolicy":"ClusterFirst" "restartPolicy":"Always" "schedulerName":"default-scheduler" "securityContext":map[] "terminationGracePeriodSeconds":'\x1e']]] "status":map["conditions":[map["lastTransitionTime":"2019-09-01T08:41:53Z" "lastUpdateTime":"2019-09-01T08:41:53Z" "message":"Deployment has minimum availability." "reason":"MinimumReplicasAvailable" "status":"True" "type":"Available"]] "observedGeneration":'\x02' "replicas":'\x01' "unavailableReplicas":'\x01' "updatedReplicas":'\x01']]}
+for: "/tmp/helm-template-workdir-878334500/**/output/namespaces/**-staging/env/charts/sunday-daniel/templates/part0-deployment.yaml": unrecognized type: int64'
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-helm-apply'. The execution of the pipeline has stopped.[0m
